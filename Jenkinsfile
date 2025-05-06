@@ -6,7 +6,7 @@ pipeline {
     }
 
     environment {
-        FIREBASE_TOKEN = credentials('1//0g_TH6S9WAOgxCgYIARAAGBASNwF-L9IrFhmuNZxDSZivyZBydsCVyB4phEs8UQyP0m1luy7kh1QfZjV6MUvVegyKCSox-e_-aoA')  // ใส่ Firebase token จาก Jenkins Credentials
+        FIREBASE_TOKEN = credentials('fdf6a9f1-8e54-49e9-982d-99b23713ddd4')  // ใส่ Firebase token จาก Jenkins Credentials
     }
 
     stages {
