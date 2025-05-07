@@ -1,34 +1,37 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import jenkinsLogo from './assets/jenkins.png' // ตรวจสอบว่าไฟล์อยู่ที่ path นี้
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [score, setScore] = useState(0)
+
+  const handleLogoClick = () => {
+    setScore(score + 1)
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="container">
+      <h1>Welcome to Jenkins CI/CD Demo</h1>
+      <p className="score">SCORE: <span>{score}</span></p>
+      <p className="author">BY<br />B6511005 NETNAPA SARAWAN</p>
+
+      <div className="logo-container">
+        <img
+          src={jenkinsLogo}
+          alt="Jenkins logo"
+          className="jenkins-logo"
+          onClick={handleLogoClick}
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+
+      <p className="description">
+        Click on the Jenkins logo to increase your score and learn more about Jenkins CI/CD
       </p>
-    </>
+
+      <footer>
+        Powered by <span className="highlight">Jenkins</span> and <span className="highlight">Vite</span>
+      </footer>
+    </div>
   )
 }
 

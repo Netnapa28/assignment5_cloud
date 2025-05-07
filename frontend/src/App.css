@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #2f55bd, #162341);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
   text-align: center;
+  padding: 2rem;
+  background-color: rgba(15, 23, 42, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  max-width: 500px;
+  width: 90%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.score {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.score span {
+  font-weight: bold;
+  color: #38bdf8;
 }
 
-.card {
-  padding: 2em;
+.author {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #cbd5e1;
 }
 
-.read-the-docs {
-  color: #888;
+.logo-container {
+  margin: 1rem 0;
+}
+
+.jenkins-logo {
+  width: 120px;
+  transition: transform 0.3s ease;
+}
+
+.jenkins-logo:hover {
+  transform: scale(1.1);
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  margin-top: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.highlight {
+  color: #60a5fa;
+  font-weight: 600;
+}
+
+.jenkins-logo {
+  width: 120px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
